@@ -7,9 +7,6 @@ pipeline:
     image: golang
     commands:
       - go build
-      - cd ../../
-      - ls -R
-      - pwd
   publish:
     image: plugins/docker
     repo: nodece/test
