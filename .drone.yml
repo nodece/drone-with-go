@@ -4,11 +4,14 @@ workspace:
 
 pipeline:
   build:
-    image: golang:alpine
+    image: golang
     commands:
+      - go get
       - go build
+      - go test
+      - ls
+      - pwd
   publish:
     image: plugins/docker
     repo: nodece/test
     secrets: [ docker_username, docker_password ]
-    
