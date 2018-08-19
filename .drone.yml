@@ -7,7 +7,7 @@ pipeline:
     image: golang
     commands:
       - go build
-      - ls
+      - tree
       - pwd
   publish:
     image: plugins/docker
