@@ -7,3 +7,6 @@ pipeline:
     image: golang:latest
     commands:
       - go build
+  publish:
+    image: plugins/docker
+    repo: nodece/test
