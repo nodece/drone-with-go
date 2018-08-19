@@ -4,9 +4,9 @@ workspace:
 
 pipeline:
   build:
-    image: golang:latest
+    image: golang:alpine
     commands:
       - go build
-  publish:
-    image: plugins/docker
-    repo: nodece/test
+      - cd /go/bin
+      - ls
+
