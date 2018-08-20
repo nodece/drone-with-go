@@ -1,4 +1,4 @@
 FROM scratch
 COPY go /
-CMD ["go"]
+CMD ["/go"]
 
